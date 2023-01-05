@@ -8,7 +8,7 @@ export default class NewApiPixabay {
     this.page = 1;
   }
   async fetchPixabay() {
-    const URL = `${BASE_URL}?key=${API_KEY}&q=${this.value}&image_type=photo&orientation=horizontal&safesearch=true&per_page=30&page=${this.page}`;
+    const URL = `${BASE_URL}?key=${API_KEY}&q=${this.value}&image_type=photo&orientation=horizontal&safesearch=true&per_page=21&page=${this.page}`;
 
     const response = await axios.get(URL);
     this.page += 1;
